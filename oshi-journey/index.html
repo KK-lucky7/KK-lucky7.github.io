@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>推しジャーニー公式ページ</title>
+  <style>
+    :root {
+      --ink: #171b4f;
+      --muted: #6f6a78;
+      --pink: #e7789b;
+      --line: rgba(231, 120, 155, 0.25);
+      --card: rgba(255, 255, 255, 0.86);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 20% 10%, #ffe4ef 0, transparent 30%),
+        radial-gradient(circle at 86% 16%, #fff2c8 0, transparent 24%),
+        linear-gradient(180deg, #fff7fb 0%, #fffdf7 55%, #f8fffb 100%);
+      min-height: 100vh;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 24px 20px 32px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 28px 22px 30px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: var(--card);
+      box-shadow: 0 18px 50px rgba(231, 120, 155, 0.14);
+    }
+
+    .icon {
+      width: 84px;
+      height: 84px;
+      border-radius: 22px;
+      box-shadow: 0 14px 28px rgba(23, 27, 79, 0.14);
+      margin-bottom: 10px;
+    }
+
+    .logo-frame {
+      width: min(420px, 92%);
+      height: 120px;
+      margin: -12px auto 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .badge {
+      display: inline-block;
+      margin: 12px 0;
+      padding: 7px 14px;
+      border-radius: 999px;
+      color: var(--pink);
+      background: #fff;
+      border: 1px dashed rgba(231, 120, 155, 0.45);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    .lead {
+      margin: 12px auto 0;
+      max-width: 560px;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .links {
+      display: grid;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    a.card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      padding: 17px 18px;
+      border-radius: 18px;
+      color: var(--ink);
+      text-decoration: none;
+      background: #fff;
+      border: 1px solid var(--line);
+      box-shadow: 0 10px 24px rgba(23, 27, 79, 0.06);
+      font-weight: 700;
+    }
+
+    .arrow {
+      color: var(--pink);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img class="icon" src="../AppIcon.png" alt="推しジャーニー アプリアイコン">
+
+      <div class="logo-frame">
+        <img class="logo" src="../AppTitleLogo.png" alt="推しジャーニー">
+      </div>
+
+      <div class="badge">OSHI JOURNEY</div>
+
+      <p class="lead">
+        推し活の思い出を、日記・イベント・感情・お金・予定と一緒に残せる記録アプリです。
+      </p>
+
+      <div class="links">
+        <a class="card" href="https://apps.apple.com/app/id6771171313">
+          <span>App Store</span><span class="arrow">›</span>
+        </a>
+        <a class="card" href="https://oshi-journey-support.notion.site/365b4608624a802eb0bec2c1da6c58c0">
+          <span>サポート</span><span class="arrow">›</span>
+        </a>
+        <a class="card" href="https://oshi-journey-support.notion.site/365b4608624a80c6ac6edb82be366884">
+          <span>プライバシーポリシー</span><span class="arrow">›</span>
+        </a>
+        <a class="card" href="https://oshi-journey-support.notion.site/365b4608624a80afadeaff86cb3ea217">
+          <span>利用規約</span><span class="arrow">›</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      © Kenty / 推しジャーニー
+    </footer>
+  </main>
+</body>
+</html>
